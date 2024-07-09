@@ -2,14 +2,23 @@ import { useState } from "react";
 import "./components/stil.css";
 import Dugmici from "./components/Dugmici";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleInfo } from "@fortawesome/free-solid-svg-icons";
+import { faChevronDown, faCircleInfo } from "@fortawesome/free-solid-svg-icons";
 import Proizvod from "./components/Proizvodi";
 import {listaProizvoda} from "./components/Proizvodi/proizvodi";
+import Harmonika from "./components/Harmonika";
+import HarmonikaSadrzaj from "./components/HarmonikaSadrzaj";
+
 
 function App() {
   const [content, setContent] = useState(<p></p>);
   const [oNama,setONama]=useState(<p></p>);
-
+  const [more, setMore] = useState(false);
+  const [proizvodi, setProizvodi] = useState(listaProizvoda.slice(0, 8));
+  const [filtriranje, setFiltriranje] = useState(listaProizvoda);
+  const handleMore = () => {
+    setMore(true);
+    setProizvodi(listaProizvoda);
+  };
   function handleONama() {
     setContent(
       <center>
@@ -47,12 +56,42 @@ function App() {
           </Dugmici>
       </menu>
       {oNama ? <>{content}</> : null}
+      <br />
+      <center>
+        <Harmonika
+          sadrzaj={
+            <HarmonikaSadrzaj
+              filtriranje={filtriranje}
+              setFiltriranje={setFiltriranje}
+            />
+          }
+        />
+      </center>
       <menu>
-        <Proizvod 
-        slika={listaProizvoda[0].Slika1}
-        cena={listaProizvoda[0].cena}
-        naslov={listaProizvoda[0].naslov}/>
+      {filtriranje.map((item, key) => {
+          if (!more && key > 7) {
+            return;
+          }
+          return (
+            <Proizvod
+              key={item.id}
+              slika={item.Slika1}
+              cena={item.cena}
+              naslov={item.naslov}
+              popust={item.popust}
+              opis={item.opis}
+            />
+          );
+        })}
       </menu>
+      {more === false && filtriranje.length > 8 ? (
+        <center>
+          <button onClick={handleMore} className="defaultButton">
+            Prikaži sve{"   "}
+            <FontAwesomeIcon icon={faChevronDown} />
+          </button>
+        </center>
+      ) : null}
       </main>
     </div>
   );

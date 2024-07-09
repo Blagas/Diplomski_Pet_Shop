@@ -28,3 +28,43 @@ header{
     transition-duration: 0.5s;
     outline: none; /* Remove the default outline on hover */
   }
+  menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .checkbox-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .round-checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .round-checkbox input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .checkmark {
+    width: 24px;
+    height: 24px;
+    background-color: #ccc;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .round-checkbox input:checked + .checkmark {
+    background-color: #743a07;
+  }
