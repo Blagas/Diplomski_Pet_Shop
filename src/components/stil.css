@@ -1,0 +1,30 @@
+body{
+    background-color: #c9640c;
+}
+.naslov{
+    color: #1f0f02;
+    font-size: 50px;
+}
+header{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.defaultButton {
+    margin-right: 20px;
+    background-color: whitesmoke;
+    width: 250px;
+    height: 35px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border: none;
+  }
+  
+  .defaultButton:hover {
+    background-color: #743a07;
+    color: black;
+    transition-duration: 0.5s;
+    outline: none; /* Remove the default outline on hover */
+  }
