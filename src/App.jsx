@@ -42,13 +42,7 @@ function App() {
         >
           
           <p style={{ width: "1100px", textAlign: "justify" }}>
-            Dobrodošli na našu platformu. Mi smo prodavnica kamp opreme koja se
-            fokusirati na pružanje visokokvalitetnih proizvoda za entuzijaste
-            kampovanja i ljubitelje prirode. Naša misija je omogućiti kupcima
-            nezaboravna iskustva u prirodi kroz vrhunsku opremu i izuzetnu
-            korisničku uslugu. Vizija nam je postati vodeći distributer kamp
-            opreme u regionu, prepoznatljiv po kvalitetu, raznovrsnosti i
-            profesionalnoj usluzi.
+            Dobrodošli na našu platformu. Mi smo pet shop prodavnica ....Treba doraditi
           </p>
         </div>
       </center>
