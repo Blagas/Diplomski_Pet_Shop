@@ -68,3 +68,8 @@ header{
   .round-checkbox input:checked + .checkmark {
     background-color: #743a07;
   }
+  h4 {
+    color: black;
+    text-align: center;
+    font-size: 20px;
+  }
