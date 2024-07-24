@@ -37,7 +37,7 @@ const Sadrzaj = ({ slika, cena, opis, naslov, popust }) => {
       left: "75px",
     },
     naslov: {
-      marginTop: "10px",
+      marginTop: "-10px",
       fontWeight: "bold",
     },
     cena: {
@@ -58,28 +58,28 @@ const Sadrzaj = ({ slika, cena, opis, naslov, popust }) => {
     },
     slide: {
       position: "absolute",
-      top: "-115px",
+      top: "-35px",
       left: "20px",
     },
     naslovPopUp: {
       position: "absolute",
-      top: "-130px",
-      left: "530px",
+      top: "-100px",
+      left: "330px",
       width: "100%",
-      fontSize: "40px",
+      fontSize: "35px",
       textAlign: "justify",
       color: "whitesmoke",
     },
     opis: {
       marginTop: "10px",
-      marginLeft: "525px",
-      width: "800px",
+      marginLeft: "320px",
+      width: "600px",
       textAlign: "justify",
       color: "whitesmoke",
     },
     cenaPopUp: {
-      marginTop: "120px",
-      marginLeft: "550px",
+      marginTop: "40px",
+      marginLeft: "350px",
     },
     popustPopUp: {
       fontSize: "40px",
@@ -104,7 +104,7 @@ const Sadrzaj = ({ slika, cena, opis, naslov, popust }) => {
     <>
       <div style={{ position: "relative", width: "600px", height: "600px" }}>
         <div style={stil.slide}>
-          <img src={slika} alt="Slika nije dostupna" />
+          <img style={stil.slika} src={slika} alt="Slika nije dostupna" />
         </div>
         <p style={stil.naslovPopUp}>{naslov}</p>
         <p style={stil.cenaPopUp}>
@@ -124,7 +124,7 @@ const Sadrzaj = ({ slika, cena, opis, naslov, popust }) => {
         <hr
           style={{
             margintTop: "640  px",
-            width: "1020px",
+            width: "620px",
             marginLeft: "300px",
             color: "black",
           }}
@@ -134,7 +134,7 @@ const Sadrzaj = ({ slika, cena, opis, naslov, popust }) => {
           style={{
             margintTop: "600px",
             width: "1000px",
-            marginLeft: "550px",
+            marginLeft: "200px",
             fontSize: "40px",
             marginBottom: "0px",
             color: "whitesmoke",
