@@ -85,3 +85,25 @@ header{
     padding: 0px 10px;
     font-size: 22px;
   }
+  .gasiPopUp {
+    margin-right: 20px;
+    color: whitesmoke;
+    background-color: #743a07;
+    width: 50px;
+    height: 35px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border: 1px solid whitesmoke;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .gasiPopUp:hover {
+    background-color: whitesmoke;
+    color: black;
+    transition-duration: 0.5s;
+    outline: none; /* Remove the default outline on hover */
+  }

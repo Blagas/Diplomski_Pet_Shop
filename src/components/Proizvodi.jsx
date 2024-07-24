@@ -41,10 +41,10 @@ const Proizvod = ({
     },
     akcija: {
       position: "absolute",
-      top: "-10px",
+      top: "10px",
       right: "0px",
-      width: "80px",
-      height: "80px",
+      width: "70px",
+      height: "70px",
       pointerEvents: "none",
     },
     dodaj: {

@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const PopUp = ({ sadrzaj, setOpen }) => {
   const stil = {
     sadrzaj: {
-      backgroundColor: "rgba(95, 111, 82, 0.95)",
+      backgroundColor: "rgb(116, 58, 7,0.95)",
       position: "fixed",
       width: "70%",
       height: "60%",
@@ -22,7 +22,7 @@ const PopUp = ({ sadrzaj, setOpen }) => {
     <>
       <div className="divPozadina"></div>
       <div style={stil.sadrzaj}>
-        <button className="defaultButton gasiPopUp" onClick={handleClose}>
+        <button className="gasiPopUp" onClick={handleClose}>
           <FontAwesomeIcon icon={faX} />
         </button>
         {sadrzaj}
