@@ -107,3 +107,22 @@ header{
     transition-duration: 0.5s;
     outline: none; /* Remove the default outline on hover */
   }
+  .Logo{
+    height: 150px;
+    width: 150px;
+  }
+  input {
+    width: 100%;
+    padding: 5px;
+    border: 5px solid #1f0f02;
+    border-radius: 5px;
+    outline: none;
+    font-size: 15px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    font-weight: bold;
+  }
+  
+  input:focus {
+    border-color: #c9640c;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  }

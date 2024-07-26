@@ -13,7 +13,7 @@ import Korpa from "./components/Korpa/Korpa";
 import PopUp from "./components/PopUp";
 import Placanje from "./components/Placanje/Placanje";
 import Linkovi from "./components/Linkovi";
-
+import Logo from "./components/logo.png";
 
 function App() {
   const [content, setContent] = useState(<p></p>);
@@ -70,6 +70,9 @@ function App() {
   };
   return (
     <div>
+      <div style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
+       <img src={Logo} alt="Slika nije dostupna" className="Logo"/> 
+      </div>
       <ToastContainer />
       {openKorpa && (
         <PopUp

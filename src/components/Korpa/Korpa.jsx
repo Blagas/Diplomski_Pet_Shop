@@ -95,8 +95,9 @@ const Korpa = ({ data = [], setData, setOpen,handleOpenPlacanje }) => {
         onClick={handleKupi}
         disabled={korpaData.length === 0}
         className={korpaData.length === 0 ? "korpaNeHover" : "defaultButton"}
+        style={{marginBottom:"10px"}}
       >
-        Kupi
+        Nastavi
       </button>
     </div>
   );
