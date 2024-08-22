@@ -59,7 +59,7 @@ const HarmonikaSadrzaj = ({ filtriranje, setFiltriranje }) => {
       </div>
       <div style={{ marginLeft: "80px" }}>
         <strong style={{ fontSize: "20px", marginRight: "40px" }}>
-          Oprema
+          Proizvodi
         </strong>
         <hr />
         <Checkbox tekst={"Hrana"} setChecked={setHrana} check={hrana} />
