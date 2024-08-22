@@ -34,16 +34,31 @@ function App() {
       <center>
         <div
           style={{
-            backgroundColor: "#f5f5f5d1 ",
+            backgroundColor: "whiteSmoke",
             width: "1100px",
             padding: "10px",
             borderRadius: "20px",
+            border: "7px solid #743a07",
           }}
         >
           
           <p style={{ width: "1100px", textAlign: "justify" }}>
-            Dobrodošli na našu platformu. Mi smo pet shop prodavnica ....Treba doraditi
+            Dobrodošli na našu platformu. Mi smo pet shop prodavnica Paws i posvećeni smo pružanju najboljeg za Vaše ljubimce. Kod nas ćete pronaći sve što je potrebno za njihov srećan i zdrav život. Od kvalitetne hrane i poslastica, do igračaka, opreme i aksesoara, sve na jednom mestu.
           </p>
+          <p style={{ width: "1100px", textAlign: "justify" }}>
+          Zašto odabrati nas?
+          </p>
+          <ul style={{ width: "1100px", textAlign: "justify" }}>
+          <li>
+          Širok asortiman: Nudimo proizvode renomiranih brendova po pristupačnim cenama.
+          </li>
+          <li>
+          Ljubazna usluga: Naš tim stručnjaka uvek je spreman da vam pomogne i pruži savete za negu vašeg ljubimca.
+          </li>
+          <li>
+          Brza dostava: Kupujte iz udobnosti svog doma i očekujte brzu isporuku na vašu adresu.
+          </li>
+          </ul>
         </div>
       </center>
     );
