@@ -36,7 +36,7 @@ import {
               petshoppaws032@gmail.com
             </p>
           </div>
-          <h4>Copyright©2024 Paws camping®</h4>
+          <h4>Copyright©2024 Pet Shop Paws®</h4>
           <menu>
             <a
               className={stil}
