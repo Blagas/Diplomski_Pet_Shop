@@ -7,7 +7,7 @@ const PopUp = ({ sadrzaj, setOpen }) => {
       backgroundColor: "rgb(116, 58, 7,0.95)",
       position: "fixed",
       width: "70%",
-      height: "60%",
+      height: "70%",
       left: "15%",
       top: "12%",
       zIndex: "2",
