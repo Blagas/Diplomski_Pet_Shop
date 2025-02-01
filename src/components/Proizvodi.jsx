@@ -7,6 +7,7 @@ import Sadrzaj from "./Sadrzaj";
 
 const Proizvod = ({
   slika,
+  slikaLink,
   cena,
   naslov,
   popust,
@@ -128,7 +129,7 @@ const Proizvod = ({
       <div style={stil.okvir}>
         <div style={stil.slikaContainer}>
           <img
-            src={slika}
+            src={slikaLink ? slikaLink : slika} // Kratka provera
             alt="Slika nije dostupna"
             style={stil.slika}
             onClick={handleClick}
@@ -181,4 +182,4 @@ const Proizvod = ({
   );
 };
 
-export default Proizvod;
+export default Proizvod;

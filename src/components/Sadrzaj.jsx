@@ -1,4 +1,4 @@
-
+import { height, width } from "@fortawesome/free-solid-svg-icons/faFilter";
 
 const Sadrzaj = ({ slika, cena, opis, naslov, popust }) => {
   const stil = {
@@ -13,7 +13,7 @@ const Sadrzaj = ({ slika, cena, opis, naslov, popust }) => {
     },
     slikaContainer: {
       position: "relative",
-      width: "100%",
+      width: "280px",
       height: "280px",
     },
     slika: {
@@ -58,6 +58,8 @@ const Sadrzaj = ({ slika, cena, opis, naslov, popust }) => {
     },
     slide: {
       position: "absolute",
+      width: "280px",
+      height: "280px",
       top: "-35px",
       left: "20px",
     },
@@ -99,7 +101,7 @@ const Sadrzaj = ({ slika, cena, opis, naslov, popust }) => {
       color: "whitesmoke",
     },
   };
-  
+
   return (
     <>
       <div style={{ position: "relative", width: "600px", height: "600px" }}>
@@ -147,4 +149,4 @@ const Sadrzaj = ({ slika, cena, opis, naslov, popust }) => {
     </>
   );
 };
-export default Sadrzaj;
+export default Sadrzaj;

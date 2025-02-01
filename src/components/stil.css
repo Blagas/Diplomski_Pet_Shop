@@ -1,128 +1,204 @@
-body{
-    background-color: #c9640c;
+body {
+  background-color: #c9640c;
 }
-.naslov{
-    color: #1f0f02;
-    font-size: 50px;
+.naslov {
+  color: #1f0f02;
+  font-size: 50px;
 }
-header{
-    text-align: center;
-    display: flex;
-    justify-content: center;
+header {
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 .defaultButton {
-    margin-right: 20px;
-    background-color: whitesmoke;
-    width: 250px;
-    height: 35px;
-    border-radius: 12px;
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    border: none;
-  }
-  
-  .defaultButton:hover {
-    background-color: #743a07;
-    color: black;
-    transition-duration: 0.5s;
-    outline: none; /* Remove the default outline on hover */
-  }
-  menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  .checkbox-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 10px;
-  }
-  
-  .round-checkbox {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-  }
-  
-  .round-checkbox input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  .checkmark {
-    width: 24px;
-    height: 24px;
-    background-color: #ccc;
-    border-radius: 50%;
-    transition: background-color 0.2s;
-    display: inline-block;
-    margin-right: 10px;
-  }
-  
-  .round-checkbox input:checked + .checkmark {
-    background-color: #743a07;
-  }
-  h4 {
-    color: black;
-    text-align: center;
-    font-size: 20px;
-  }
-  section {
-    width: 100%;
-    background-color: #743a07;
-    height: 103px;
-    padding: 0px;
-  }
-  a {
-    text-decoration: none;
-    color: black;
-    padding: 0px 10px;
-    font-size: 22px;
-  }
-  .gasiPopUp {
-    margin-right: 20px;
-    color: whitesmoke;
-    background-color: #743a07;
-    width: 50px;
-    height: 35px;
-    border-radius: 12px;
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    border: 1px solid whitesmoke;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
-  
-  .gasiPopUp:hover {
-    background-color: whitesmoke;
-    color: black;
-    transition-duration: 0.5s;
-    outline: none; /* Remove the default outline on hover */
-  }
-  .Logo{
-    height: 150px;
-    width: 150px;
-  }
-  input {
-    width: 100%;
-    padding: 5px;
-    border: 5px solid #1f0f02;
-    border-radius: 5px;
-    outline: none;
-    font-size: 15px;
-    transition: border-color 0.3s, box-shadow 0.3s;
-    font-weight: bold;
-  }
-  
-  input:focus {
-    border-color: #c9640c;
-    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
-  }
+  margin-right: 20px;
+  background-color: whitesmoke;
+  width: 250px;
+  height: 35px;
+  border-radius: 12px;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  border: none;
+}
+
+.defaultButton:hover {
+  background-color: #743a07;
+  color: black;
+  transition-duration: 0.5s;
+  outline: none; /* Remove the default outline on hover */
+}
+menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.checkbox-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+}
+
+.round-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.round-checkbox input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.checkmark {
+  width: 24px;
+  height: 24px;
+  background-color: #ccc;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.round-checkbox input:checked + .checkmark {
+  background-color: #743a07;
+}
+h4 {
+  color: black;
+  text-align: center;
+  font-size: 20px;
+}
+section {
+  width: 100%;
+  background-color: #743a07;
+  height: 103px;
+  padding: 0px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  padding: 0px 10px;
+  font-size: 22px;
+}
+.gasiPopUp {
+  margin-right: 20px;
+  color: whitesmoke;
+  background-color: #743a07;
+  width: 50px;
+  height: 35px;
+  border-radius: 12px;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  border: 1px solid whitesmoke;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.gasiPopUp:hover {
+  background-color: whitesmoke;
+  color: black;
+  transition-duration: 0.5s;
+  outline: none; /* Remove the default outline on hover */
+}
+.Logo {
+  height: 150px;
+  width: 150px;
+}
+input {
+  width: 100%;
+  padding: 5px;
+  border: 5px solid #1f0f02;
+  border-radius: 5px;
+  outline: none;
+  font-size: 15px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  font-weight: bold;
+}
+
+input:focus {
+  border-color: #c9640c;
+  box-shadow: 0 0 8px rgba(0, 123,  255,  0.5);
+}
+.adminDugme {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.custom-select {
+  font-family: Arial;
+  font-size: 20px;
+}
+
+.select-selected {
+  background-color: DodgerBlue;
+}
+
+
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+
+.select-items div,
+.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+textarea {
+  width: 100%;
+  padding: 5px;
+  border: 5px solid #1f0f02;
+  border-radius: 5px;
+  outline: none;
+  font-size: 15px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  font-weight: bold;
+}
+
+textarea:focus {
+  border-color: #c9640c;
+  box-shadow: 0 0 8px rgba(0, 123,  255,  0.5);
+}
